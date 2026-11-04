@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="148" viewBox="0 0 1200 148" role="img" aria-labelledby="t d">
+  <title id="t">03 开始用</title>
+  <desc id="d">自己跑，或者直接交给 Claude Code</desc>
+  <rect width="1200" height="148" rx="22" fill="#0c1009"/>
+  <text x="56" y="80" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" font-weight="600" fill="#c4dd78">03</text>
+  <text x="112" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="44" font-weight="700" fill="#eef0dc">开始用</text>
+  <text x="114" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="21" fill="#93a07a">自己跑，或者直接交给 Claude Code</text>
+  <g stroke-width="3.4" stroke-linecap="round">
+    <line x1="815.0" y1="42.9" x2="831.0" y2="37.1" stroke="#4a602a" opacity="0.20"/>
+    <line x1="836.7" y1="41.8" x2="853.3" y2="38.2" stroke="#5b7234" opacity="0.40"/>
+    <line x1="858.7" y1="42.0" x2="875.3" y2="38.0" stroke="#708742" opacity="0.60"/>
+    <line x1="881.2" y1="43.3" x2="896.8" y2="36.7" stroke="#879e51" opacity="0.80"/>
+    <line x1="904.4" y1="45.4" x2="917.6" y2="34.6" stroke="#9db55f" opacity="1.00"/>
+    <line x1="928.6" y1="47.3" x2="937.4" y2="32.7" stroke="#afc86b" opacity="1.00"/>
+    <line x1="953.1" y1="48.3" x2="956.9" y2="31.7" stroke="#bdd673" opacity="1.00"/>
+    <line x1="977.2" y1="48.5" x2="976.8" y2="31.5" stroke="#c3dc78" opacity="1.00"/>
+    <line x1="1000.1" y1="48.4" x2="997.9" y2="31.6" stroke="#c2db77" opacity="1.00"/>
+    <line x1="1021.7" y1="48.5" x2="1020.3" y2="31.5" stroke="#bad372" opacity="1.00"/>
+    <line x1="1042.0" y1="48.4" x2="1044.0" y2="31.6" stroke="#abc468" opacity="1.00"/>
+    <line x1="1061.5" y1="47.8" x2="1068.5" y2="32.2" stroke="#97af5b" opacity="1.00"/>
+    <line x1="1081.1" y1="46.2" x2="1092.9" y2="33.8" stroke="#81984d" opacity="1.00"/>
+    <line x1="1101.5" y1="44.1" x2="1116.5" y2="35.9" stroke="#6a813e" opacity="1.00"/>
+    <line x1="1122.8" y1="42.3" x2="1139.2" y2="37.7" stroke="#566d31" opacity="1.00"/>
+    <line x1="814.9" y1="66.5" x2="831.1" y2="61.5" stroke="#3b5120" opacity="0.20"/>
+    <line x1="837.6" y1="68.2" x2="852.4" y2="59.8" stroke="#3d5321" opacity="0.40"/>
+    <line x1="861.3" y1="70.3" x2="872.7" y2="57.7" stroke="#465d27" opacity="0.60"/>
+    <line x1="885.8" y1="71.9" x2="892.2" y2="56.1" stroke="#566d31" opacity="0.80"/>
+    <line x1="910.2" y1="72.5" x2="911.8" y2="55.5" stroke="#6a813e" opacity="1.00"/>
+    <line x1="933.7" y1="72.5" x2="932.3" y2="55.5" stroke="#81994d" opacity="1.00"/>
+    <line x1="956.0" y1="72.4" x2="954.0" y2="55.6" stroke="#97af5b" opacity="1.00"/>
+    <line x1="977.0" y1="72.5" x2="977.0" y2="55.5" stroke="#abc468" opacity="1.00"/>
+    <line x1="996.9" y1="72.2" x2="1001.1" y2="55.8" stroke="#bad372" opacity="1.00"/>
+    <line x1="1016.4" y1="71.1" x2="1025.6" y2="56.9" stroke="#c3db77" opacity="1.00"/>
+    <line x1="1036.3" y1="69.2" x2="1049.7" y2="58.8" stroke="#c3dc78" opacity="1.00"/>
+    <line x1="1057.1" y1="67.2" x2="1072.9" y2="60.8" stroke="#bdd673" opacity="1.00"/>
+    <line x1="1078.7" y1="65.9" x2="1095.3" y2="62.1" stroke="#afc86b" opacity="1.00"/>
+    <line x1="1100.7" y1="65.8" x2="1117.3" y2="62.2" stroke="#9db55f" opacity="1.00"/>
+    <line x1="1123.1" y1="67.0" x2="1138.9" y2="61.0" stroke="#879e51" opacity="1.00"/>
+    <line x1="818.4" y1="95.1" x2="827.6" y2="80.9" stroke="#52682f" opacity="0.20"/>
+    <line x1="842.9" y1="96.2" x2="847.1" y2="79.8" stroke="#435a25" opacity="0.40"/>
+    <line x1="867.0" y1="96.5" x2="867.0" y2="79.5" stroke="#3c5221" opacity="0.60"/>
+    <line x1="890.0" y1="96.4" x2="888.0" y2="79.6" stroke="#3c5221" opacity="0.80"/>
+    <line x1="911.7" y1="96.5" x2="910.3" y2="79.5" stroke="#435a25" opacity="1.00"/>
+    <line x1="932.2" y1="96.5" x2="933.8" y2="79.5" stroke="#52682f" opacity="1.00"/>
+    <line x1="951.8" y1="95.9" x2="958.2" y2="80.1" stroke="#657c3b" opacity="1.00"/>
+    <line x1="971.3" y1="94.3" x2="982.7" y2="81.7" stroke="#7b9349" opacity="1.00"/>
+    <line x1="991.6" y1="92.2" x2="1006.4" y2="83.8" stroke="#92aa58" opacity="1.00"/>
+    <line x1="1012.9" y1="90.5" x2="1029.1" y2="85.5" stroke="#a7bf65" opacity="1.00"/>
+    <line x1="1034.7" y1="89.7" x2="1051.3" y2="86.3" stroke="#b7d070" opacity="1.00"/>
+    <line x1="1056.8" y1="90.2" x2="1073.2" y2="85.8" stroke="#c1da76" opacity="1.00"/>
+    <line x1="1079.4" y1="91.9" x2="1094.6" y2="84.1" stroke="#c4dd78" opacity="1.00"/>
+    <line x1="1102.9" y1="94.0" x2="1115.1" y2="82.0" stroke="#bfd875" opacity="1.00"/>
+    <line x1="1127.3" y1="95.7" x2="1134.7" y2="80.3" stroke="#b3cc6d" opacity="1.00"/>
+    <line x1="823.6" y1="120.5" x2="822.4" y2="103.5" stroke="#81984d" opacity="0.20"/>
+    <line x1="846.1" y1="120.4" x2="843.9" y2="103.6" stroke="#6a813e" opacity="0.40"/>
+    <line x1="867.2" y1="120.5" x2="866.8" y2="103.5" stroke="#566d31" opacity="0.60"/>
+    <line x1="887.2" y1="120.3" x2="890.8" y2="103.7" stroke="#465d27" opacity="0.80"/>
+    <line x1="906.6" y1="119.3" x2="915.4" y2="104.7" stroke="#3d5321" opacity="1.00"/>
+    <line x1="926.4" y1="117.4" x2="939.6" y2="106.6" stroke="#3b5120" opacity="1.00"/>
+    <line x1="947.2" y1="115.3" x2="962.8" y2="108.7" stroke="#415724" opacity="1.00"/>
+    <line x1="968.7" y1="114.0" x2="985.3" y2="110.0" stroke="#4e642c" opacity="1.00"/>
+    <line x1="990.7" y1="113.8" x2="1007.3" y2="110.2" stroke="#607738" opacity="1.00"/>
+    <line x1="1013.0" y1="114.9" x2="1029.0" y2="109.1" stroke="#768d46" opacity="1.00"/>
+    <line x1="1036.0" y1="116.8" x2="1050.0" y2="107.2" stroke="#8ca454" opacity="1.00"/>
+    <line x1="1059.9" y1="118.8" x2="1070.1" y2="105.2" stroke="#a2ba62" opacity="1.00"/>
+    <line x1="1084.5" y1="120.1" x2="1089.5" y2="103.9" stroke="#b3cc6d" opacity="1.00"/>
+    <line x1="1108.7" y1="120.5" x2="1109.3" y2="103.5" stroke="#bfd875" opacity="1.00"/>
+    <line x1="1132.0" y1="120.4" x2="1130.0" y2="103.6" stroke="#c4dd78" opacity="1.00"/>
+  </g>
+</svg>
