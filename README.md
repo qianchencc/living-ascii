@@ -154,5 +154,5 @@ SKILL.md         instructions for Claude Code / AI agents
 <br>
 
 <p align="center">
-  Made with Claude Opus 5.5 · Inspired by <a href="https://github.com/JDhruv14/ascii-diorama">ascii-diorama</a> · MIT licensed
+  Made with Claude Opus 5.5 · MIT licensed
 </p>
