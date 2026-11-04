@@ -21,7 +21,9 @@ Turns one image into a seamless loop: strands that sway like a school of fish, p
 
 ## Parameters (URL)
 
-`img` (default: the sample), `mode` ascii|flow, `width` (default 1080), `wind` auto|degrees, `light` degrees (default 130), `amp` sway (default 1), `density` (default 1), `loop` seconds (default 12), `fps` (default 30), `t` 0–1 freeze, `export` ascii,flow.
+`img` (default: the sample), `mode` ascii|flow, `width` (default 1080), `height` (default: follows the image; with `width` set, the image is cropped to that shape), `focus` x,y 0–1 (which part to keep when cropping, default 0.5,0.5), `wind` auto|degrees, `light` degrees (default 130), `amp` sway (default 1), `density` (default 1), `loop` seconds (default 12), `fps` (default 30), `t` 0–1 freeze, `export` ascii,flow.
+
+**Wallpapers.** Set `width` and `height` to the screen's native resolution (e.g. 3840×2160 desktop, 1290×2796 phone) and choose `focus` from stills. Never render small and upscale: glyphs are 5×7 px and blur. A longer `loop` adds no variety: every motion term repeats a whole number of times per loop, so it only slows the motion down.
 
 ## Checks
 

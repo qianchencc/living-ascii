@@ -47,6 +47,26 @@
   <img src="./assets/readme/en/section-start.svg" width="100%" alt="03 Get started: run it yourself, or hand it to Claude Code">
 </p>
 
+### Just want the wallpaper?
+
+<p align="center">
+  <img src="./assets/readme/wallpapers.webp" width="100%" alt="The grass loop as a 16:9 desktop wallpaper and a tall phone wallpaper">
+</p>
+
+| Download | Size |
+|---|---|
+| [**Desktop**](https://github.com/yusen-dev/living-ascii/releases/download/wallpapers-v1/grass-desktop-4k.mp4) | 3840×2160 (4K, 16:9) |
+| [**Phone**](https://github.com/yusen-dev/living-ascii/releases/download/wallpapers-v1/grass-phone.mp4) | 1290×2796 |
+
+Each is a 12-second loop at 30 fps. The last frame flows straight back into the first, so it repeats without a jump. To set it:
+
+- **Windows**: import the video into Wallpaper Engine.
+- **Mac**: macOS can't use a video as a wallpaper by itself. Install a live-wallpaper app from the App Store and add the video.
+- **Android**: most phones can set a video as a live wallpaper straight from the gallery.
+- **iPhone**: iOS has no looping video wallpaper. You can turn a few seconds into a Live Photo for the lock screen.
+
+For your own image or your screen's exact size, see **Make a wallpaper** below.
+
 ### Option 1 · Run it yourself
 
 Requires [Node.js](https://nodejs.org) 18+.
@@ -65,6 +85,8 @@ Open <http://localhost:5177> to see the sample. To use your own image, put it in
 ```bash
 npm run check -- out/your-image-ascii.mp4
 ```
+
+**Make a wallpaper.** Set `width` and `height` to your screen's resolution, e.g. `&width=2560&height=1600`. The image is cropped to that shape, and `focus=0.5,0.3` picks which part to keep (0–1 across, 0–1 down). Render at the screen's full resolution: the characters are 5×7 pixels, so they blur if the video is scaled up.
 
 ### Option 2 · Hand it to Claude Code
 
@@ -96,7 +118,9 @@ All set in the URL, e.g. `?img=input/x.jpg&wind=20&amp=1.3`.
 |---|---|---|
 | `img` | the sample | Image to bring to life (path inside the repo) |
 | `mode` | `ascii` | `ascii` or `flow` (strands only). Press **M** to switch |
-| `width` | `1080` | Output width in px; height follows the image |
+| `width` | `1080` | Output width in px |
+| `height` | follows the image | Output height in px. With `width` also set, the image is cropped to that shape |
+| `focus` | `0.5,0.5` | Which part of the image to keep when cropping (0–1 across, 0–1 down) |
 | `wind` | `auto` | Wind direction in degrees (0 = right, 90 = up). `auto` follows the texture's own direction |
 | `light` | `130` | Where the light in your image comes from, in degrees (130 = upper left) |
 | `amp` | `1` | Sway amount |

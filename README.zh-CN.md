@@ -47,6 +47,26 @@
   <img src="./assets/readme/zh/section-start.svg" width="100%" alt="03 开始用：自己跑，或者直接交给 Claude Code">
 </p>
 
+### 只想要壁纸？
+
+<p align="center">
+  <img src="./assets/readme/wallpapers.webp" width="100%" alt="草地循环动画分别做成 16:9 的电脑壁纸和竖长的手机壁纸">
+</p>
+
+| 下载 | 尺寸 |
+|---|---|
+| [**电脑版**](https://github.com/yusen-dev/living-ascii/releases/download/wallpapers-v1/grass-desktop-4k.mp4) | 3840×2160（4K，16:9） |
+| [**手机版**](https://github.com/yusen-dev/living-ascii/releases/download/wallpapers-v1/grass-phone.mp4) | 1290×2796 |
+
+两个都是 12 秒、30 帧的循环，最后一帧精确接回第一帧，循环播放不会跳。设置方法：
+
+- **Windows**：导入 Wallpaper Engine。
+- **Mac**：系统本身不能用视频当壁纸，在 App Store 装一个动态壁纸软件，把视频加进去。
+- **安卓**：大部分手机可以直接在相册里把视频设成动态壁纸。
+- **iPhone**：iOS 不支持循环视频壁纸，只能截几秒转成实况照片放在锁屏。
+
+想用自己的图，或者按自己屏幕的尺寸做，看下面的「做成壁纸」。
+
 ### 方式一 · 自己跑
 
 需要先安装 [Node.js](https://nodejs.org) 18 或以上版本。
@@ -65,6 +85,8 @@ npm start
 ```bash
 npm run check -- out/你的图片-ascii.mp4
 ```
+
+**做成壁纸**：把 `width` 和 `height` 设成你屏幕的分辨率，比如 `&width=2560&height=1600`。图片会按这个比例裁切，`focus=0.5,0.3` 决定保留哪一块（横向 0–1，纵向 0–1）。一定要按屏幕的原生分辨率导出：每个字符只有 5×7 像素，视频被放大后字符就糊了。
 
 ### 方式二 · 交给 Claude Code
 
@@ -96,7 +118,9 @@ git clone https://github.com/yusen-dev/living-ascii.git ~/.claude/skills/living-
 |---|---|---|
 | `img` | 示例图 | 要处理的图片（仓库里的路径） |
 | `mode` | `ascii` | `ascii` 或 `flow`（只有草叶）。按 **M** 键切换 |
-| `width` | `1080` | 输出宽度（像素），高度按图片比例 |
+| `width` | `1080` | 输出宽度（像素） |
+| `height` | 按图片比例 | 输出高度（像素）。和 `width` 一起设置时，图片会裁成这个比例 |
+| `focus` | `0.5,0.5` | 裁切时保留图片的哪一块（横向 0–1，纵向 0–1） |
 | `wind` | `auto` | 风向，单位是度（0 = 向右，90 = 向上）。`auto` 沿着图片本身的纹理方向 |
 | `light` | `130` | 图片里光从哪个方向来，单位是度（130 = 左上方） |
 | `amp` | `1` | 摆动幅度 |
