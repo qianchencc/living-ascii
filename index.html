@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Living ASCII</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    canvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
+    #hud { position: fixed; left: 12px; bottom: 10px; font: 12px/1.4 Menlo, monospace; color: #9fb48a; pointer-events: none; }
+    #hud code { color: #e8f5d0; }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "/node_modules/three/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="hud">loading…</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

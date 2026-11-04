@@ -1,0 +1,19 @@
+{
+  "name": "living-ascii",
+  "version": "0.1.0",
+  "description": "Bring a still image to life as a seamless ASCII loop: the image becomes hundreds of thousands of swaying strands, and every character turns with the strand beneath it.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node scripts/check-loop.mjs"
+  },
+  "dependencies": {
+    "ffmpeg-static": "5.3.0",
+    "three": "0.169.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
