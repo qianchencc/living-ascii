@@ -154,5 +154,5 @@ SKILL.md         给 Claude Code / AI agent 的使用说明
 <br>
 
 <p align="center">
-  用 Claude Opus 5.5 制作 · MIT 协议
+  MIT 协议
 </p>
