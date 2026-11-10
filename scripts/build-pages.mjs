@@ -14,7 +14,6 @@ for (const file of ['ascii.js', 'field.js', 'font5x7.js', 'main.js', 'maps.js', 
 }
 copyFileSync('examples/grass.png', path.join(out, 'examples/grass.png'));
 copyFileSync('node_modules/three/build/three.module.js', path.join(out, 'vendor/three.module.js'));
-copyFileSync('node_modules/three/build/three.core.js', path.join(out, 'vendor/three.core.js'));
 
 const indexSource = readFileSync('index.html', 'utf8');
 const index = indexSource
