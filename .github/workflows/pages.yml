@@ -46,3 +46,13 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify published demo resources
+        run: |
+          set -euo pipefail
+          base="https://qianchencc.github.io/living-ascii/"
+          for path in index.html src/main.js vendor/three.module.js examples/grass.png; do
+            echo "Checking ${base}${path}"
+            curl -fsSL --retry 6 --retry-delay 3 --retry-all-errors "${base}${path}" -o "/tmp/$(basename "${path}")"
+            file "/tmp/$(basename "${path}")"
+          done
+          node -e 'const f=require("fs");const p=f.readFileSync("/tmp/grass.png"); if(p.length<100000||p.subarray(0,8).toString("hex")!=="89504e470d0a1a0a")throw Error("Invalid PNG response"); console.log("PNG VERIFIED",p.length,"bytes")'
