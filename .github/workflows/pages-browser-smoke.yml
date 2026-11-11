@@ -1,0 +1,46 @@
+name: Browser smoke test for Living ASCII Pages
+
+on:
+  push:
+    paths:
+      - '.github/workflows/pages-browser-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Browser startup and image diagnostic
+        run: |
+          npm install --no-save --ignore-scripts playwright-core@1.57.0
+          node --input-type=module <<'NODE'
+          import { chromium } from 'playwright-core';
+          import fs from 'node:fs';
+          const path = ['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium','/usr/bin/chromium-browser'].find(fs.existsSync);
+          if (!path) throw new Error('Chrome/Chromium missing from runner');
+          const browser = await chromium.launch({executablePath:path,headless:true,args:['--no-sandbox','--enable-unsafe-swiftshader','--enable-webgl']});
+          const page = await browser.newPage({viewport:{width:1440,height:900}});
+          const faults=[];
+          page.on('requestfailed',r=>faults.push('REQUEST FAILED '+r.url()+' '+r.failure()?.errorText));
+          page.on('pageerror',e=>faults.push('JS ERROR '+e.message));
+          page.on('response',r=>{if(r.url().includes('/examples/')) faults.push('IMAGE RESPONSE '+r.status()+' '+r.url());});
+          await page.goto('https://qianchencc.github.io/living-ascii/?smoke=1',{waitUntil:'domcontentloaded',timeout:45000});
+          await page.waitForTimeout(7000);
+          const state=await page.evaluate(()=>({
+            hud:document.getElementById('hud')?.textContent,
+            base:document.baseURI,
+            canvas:{width:document.querySelector('canvas')?.width,height:document.querySelector('canvas')?.height},
+            imgUrl:new URL('examples/grass.png',document.baseURI).href
+          }));
+          console.log('BROWSER',JSON.stringify(state));
+          console.log('EVENTS',JSON.stringify(faults));
+          await browser.close();
+          if(state.hud?.includes("Couldn't load")) throw new Error('Sample image failed in real Chromium');
+          NODE
