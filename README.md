@@ -163,4 +163,4 @@ SKILL.md         instructions for Claude Code / AI agents
 
 This Pages edition runs the live ASCII/strand animation in your browser. MP4 rendering requires the local Node/ffmpeg server and is not available on GitHub Pages.
 
-Deployment is automated by [the Pages workflow](.github/workflows/pages.yml) on changes to `main`. First-time setup: select **GitHub Actions** in [Settings → Pages](https://github.com/qianchencc/living-ascii/settings/pages), then rerun the workflow. GitHub Pages deployment is independent of any server-only features.
+GitHub Pages is active. Deployments run independently through [this repository's workflow](.github/workflows/pages.yml) when application source changes on `main`. GitHub Pages is limited to browser-side functionality and does not host server-only features.
