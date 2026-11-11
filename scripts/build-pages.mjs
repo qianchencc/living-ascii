@@ -37,3 +37,17 @@ if (main.includes("exportLoop(modes.length ? modes")) throw new Error('Browser-o
 writeFileSync(path.join(out, 'src/main.js'), main);
 writeFileSync(path.join(out, '.nojekyll'), '');
 console.log('Built static living-ascii demo at', out);
+
+const diagnostics = [
+  '<!doctype html><meta charset="utf-8"><title>Living ASCII diagnostics</title>',
+  '<pre id="result">Checking image...</pre>',
+  '<script type="module">',
+  'const target = new URL("./examples/grass.png", document.baseURI);',
+  'const lines = ["baseURI: " + document.baseURI, "target: " + target.href];',
+  'try { const r = await fetch(target); lines.push("fetch: " + r.status + " / " + r.headers.get("content-type") + " / " + r.headers.get("content-length")); const buf = await r.arrayBuffer(); lines.push("bytes: " + buf.byteLength); } catch(e) { lines.push("fetch error: " + e.message); }',
+  'const img = new Image(); img.onload = () => { lines.push("image: OK " + img.naturalWidth + "x" + img.naturalHeight); document.querySelector("#result").textContent = lines.join("\\n"); };',
+  'img.onerror = () => { lines.push("image: FAILED"); document.querySelector("#result").textContent = lines.join("\\n"); };',
+  'img.src = target.href;',
+  '</' + 'script>'
+].join("\n");
+writeFileSync(path.join(out, 'health.html'), diagnostics);
